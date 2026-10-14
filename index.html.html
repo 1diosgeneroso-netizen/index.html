@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biografía y Horario de Clases</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #263238;
+      background: #f2f5f8;
+    }
+    header {
+      background: #123b5d;
+      color: white;
+      text-align: center;
+      padding: 30px 16px;
+    }
+    header h1 { margin: 0 0 8px; }
+    main {
+      max-width: 1000px;
+      margin: 28px auto;
+      padding: 0 18px;
+    }
+    section {
+      background: white;
+      margin-bottom: 22px;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.07);
+    }
+    h2 {
+      color: #123b5d;
+      border-bottom: 2px solid #d5e2ec;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+    .perfil {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .foto {
+      width: 190px;
+      height: 220px;
+      object-fit: cover;
+      border: 2px solid #d5e2ec;
+      border-radius: 8px;
+      background: #edf2f6;
+    }
+    .nota-foto { font-size: .88rem; color: #5d6d7e; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+    }
+    th, td {
+      border: 1px solid #cbd5df;
+      padding: 12px;
+      text-align: left;
+    }
+    th { background: #123b5d; color: white; }
+    tbody tr:nth-child(even) { background: #f3f7fa; }
+    footer {
+      text-align: center;
+      color: #52616b;
+      padding: 18px;
+      font-size: .9rem;
+    }
+    @media (max-width: 600px) {
+      section { padding: 17px; }
+      th, td { padding: 8px; font-size: .9rem; }
+      .foto { width: 150px; height: 175px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Biografía personal</h1>
+    <p>Presentación académica y horario de clases</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Datos personales básicos</h2>
+      <div class="perfil">
+        <!-- Coloca tu fotografía en la misma carpeta que este archivo y nómbrala foto.jpg -->
+        <img class="foto" src="foto.jpg" alt="Fotografía personal">
+        <div>
+          <p><strong>Nombre completo:</strong> Eduard D. Castro Perez</p>
+          <p><strong>Fecha de nacimiento:</strong> 3 de noviembre de 2001</p>
+          <p><strong>Lugar de nacimiento:</strong> Los Mina, Santo Domingo Este, República Dominicana</p>
+          <p><strong>Nacionalidad:</strong> Dominicana</p>
+          <p class="nota-foto">Para mostrar tu foto, guarda una imagen personal con el nombre <strong>foto.jpg</strong> en la misma carpeta de este archivo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Contexto familiar y personal</h2>
+      <p>
+        Eduard creció en un entorno de recursos económicos limitados, una experiencia que contribuyó
+        a fortalecer su interés por la superación personal y la educación. Su historia refleja la
+        importancia de la perseverancia y del aprovechamiento de las oportunidades académicas.
+      </p>
+      <p><em>Nota: puedes añadir información sobre tus padres, hermanos u otras personas importantes de tu infancia si deseas incluirla.</em></p>
+    </section>
+
+    <section>
+      <h2>3. Formación académica</h2>
+      <p>
+        Actualmente cursa estudios universitarios en el área de Informática en la Universidad
+        Autónoma de Santo Domingo (UASD), dentro de la Facultad de Ciencias y la Escuela de Informática.
+      </p>
+      <p>
+        Entre sus experiencias académicas se encuentra haber recibido una beca del Instituto
+        Tecnológico de las Américas (ITLA) y una medalla de mérito académico. Estos logros representan
+        una motivación para continuar desarrollando sus conocimientos y habilidades tecnológicas.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Trayectoria profesional</h2>
+      <p>
+        Ha tenido experiencia laboral en el sector comercial, donde desempeñó funciones de supervisión
+        y gestión como encargado de tienda. Esta experiencia le permitió conocer procesos operativos,
+        organización del trabajo y coordinación de tareas. Su formación en Informática complementa
+        su experiencia práctica y orienta su desarrollo profesional hacia el área tecnológica.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Producción intelectual o proyectos</h2>
+      <p>
+        Como parte de su formación en Informática, ha trabajado en actividades académicas relacionadas
+        con programación, bases de datos, desarrollo web y análisis de sistemas. Estos proyectos
+        contribuyen al fortalecimiento de sus competencias para resolver problemas mediante herramientas
+        tecnológicas.
+      </p>
+      <p><em>Se pueden añadir aquí los nombres de proyectos, aplicaciones o investigaciones concretas que desees destacar.</em></p>
+    </section>
+
+    <section>
+      <h2>6. Reconocimientos y logros</h2>
+      <ul>
+        <li>Obtención de una beca del Instituto Tecnológico de las Américas (ITLA).</li>
+        <li>Reconocimiento mediante una medalla de mérito académico.</li>
+        <li>Continuidad de los estudios universitarios en el área de Informática.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Aportes sociales y comunitarios</h2>
+      <p>
+        Su principal compromiso en esta etapa es continuar su preparación académica y desarrollar
+        conocimientos que puedan aplicarse a la solución de problemas de su entorno. La educación,
+        el aprendizaje tecnológico y el intercambio de conocimientos son áreas en las que puede
+        contribuir al crecimiento de su comunidad.
+      </p>
+      <p><em>Si participas en alguna organización, voluntariado, iglesia, asociación o actividad comunitaria, puedes agregarla en este apartado.</em></p>
+    </section>
+
+    <section>
+      <h2>8. Horario de clases</h2>
+      <p>Horario académico disponible. Completa las filas pendientes con las demás asignaturas y sus horarios.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Asignatura</th>
+            <th>Día</th>
+            <th>Horario</th>
+            <th>Institución / sección</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Programación III</td>
+            <td>Miércoles</td>
+            <td>7:00 a. m. – 9:00 a. m.</td>
+            <td>UASD</td>
+          </tr>
+          <tr>
+            <td>________________</td>
+            <td>________________</td>
+            <td>________________</td>
+            <td>________________</td>
+          </tr>
+          <tr>
+            <td>________________</td>
+            <td>________________</td>
+            <td>________________</td>
+            <td>________________</td>
+          </tr>
+          <tr>
+            <td>________________</td>
+            <td>________________</td>
+            <td>________________</td>
+            <td>________________</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Biografía personal y horario académico</p>
+  </footer>
+</body>
+</html>
